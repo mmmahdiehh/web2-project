@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "tailwind": "npx @tailwindcss/cli -i ./src/css/main.css -o ./src/css/output.css --watch"
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "swiper": "^14.1.0",
     "tailwindcss": "^4.3.3"
   }
 }
