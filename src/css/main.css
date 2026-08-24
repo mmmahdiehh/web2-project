@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 @font-face {
   font-family: Sans;
   src: url(../fonts/Iranian\ Sans.ttf);
