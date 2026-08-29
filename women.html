@@ -21,7 +21,35 @@
             </div>
             <div class="flex flex-row flex-wrap gap-x-4 items-center justify-center lg:static absolute left-4 top-4 pl-2">
             <div class="cursor-pointer"><img src="./src/images/header/Search.png" alt=""></div>
-            <div class="cursor-pointer"><img src="./src/images/header/user-alt.png" alt=""></div>
+            <!--user modal-->
+          <div onclick="my_modal_2.showModal()" class="cursor-pointer"><img src="./src/images/header/user-alt.png" alt=""></div>
+          <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+              <h3 class="mb-8 text-[20px] font-bold font-nazanin text-[#525252] text-center">خوش آمدید</h3>
+              <div class="w-full border-[1.5px] border-[#B8B8B8] px-5 py-1.5 mb-4"><input type="text" placeholder="شماره همراه" class="w-full outline-0 placeholder:font-nazanin placeholder:text-[#A3A3A3] placeholder:text-[16px]"></div>
+              <div class="mb-2 relative w-full border-[1.5px] border-[#B8B8B8] px-5 py-1.5">
+                <input id="password" type="password" placeholder="کلمه عبور" class="w-full outline-0 placeholder:font-nazanin placeholder:text-[#A3A3A3] placeholder:text-[16px]"/>
+                <button type="button" class="absolute left-6 top-2.25 cursor-pointer" id="togglePassword"><img class="w-5 h-5" id="eyeIcon" src="./src/images/header/user/eye-slash.svg" alt="نمایش رمز عبور"></button>
+              </div>
+              <h4 class="cursor-pointer mb-6 font-nazanin text-[14px] text-[#B8B8B8] underline">کلمه عبور خود را فراموش کرده‌اید؟</h4>
+              <button class="cursor-pointer mb-8 w-full p-1.5 bg-[#3D3D3D] font-nazanin text-[#F5F5F5]">ورود</button>
+              <div class="mb-8"><img src="./src/images/header/user/separate.png" alt=""></div>
+              <div class="w-full flex flex-row justify-between items-center gap-x-3.75">
+                <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] ">
+                  ورود با گوگل
+                  <img src="./src/images/header/user/Google.png" alt="">
+                </button>
+                <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] ">
+                  ورود با ایمیل
+                  <img src="./src/images/header/user/envelope.png" alt="">
+                </button>
+              </div>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
+          <!--user modal-->
             <div class="cursor-pointer"><img src="./src/images/header/shopping-cart.png" alt=""></div>
             </div>
         </div>
