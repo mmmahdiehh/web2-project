@@ -10,9 +10,9 @@
 </head>
 <body>
   <!-- wrapper -->
-  <div class="w-full">
+  <div class="w-full relative">
     <!-- header -->
-    <div class="lg:max-w-450 lg:px-15 px-5 max-w-full lg:h-16.25 h-auto lg:mx-auto py-3 flex lg:flex-row flex-col gap-y-5 lg:flex-wrap justify-center lg:justify-between items-center lg:gap-y-0 relative">
+    <div class="lg:max-w-450 lg:px-15 px-5 max-w-full lg:h-16.25 h-auto lg:mx-auto py-3 flex lg:flex-row flex-col gap-y-5 lg:flex-wrap justify-center lg:justify-between items-center lg:gap-y-0 sticky top-0 bg-[#FFFFFF]">
         <div class="lg:w-fit w-full flex items-center pr-2"><a href="#"><img class="" src="./src/images/header/logo-text.png" alt=""></a></div>
         <div class="flex lg:flex-row lg:gap-y-0 items-center gap-x-6">
           <div class="text-[14px] font-sans text-[#3d3d3d] font-bold"><a href="./women.html">زنانه</a></div>
@@ -33,14 +33,14 @@
                 <button type="button" class="absolute left-6 top-2.25 cursor-pointer" id="togglePassword"><img class="w-5 h-5" id="eyeIcon" src="./src/images/header/user/eye-slash.svg" alt="نمایش رمز عبور"></button>
               </div>
               <h4 class="cursor-pointer mb-6 font-nazanin text-[14px] text-[#B8B8B8] underline">کلمه عبور خود را فراموش کرده‌اید؟</h4>
-              <button class="cursor-pointer mb-8 w-full p-1.5 bg-[#3D3D3D] font-nazanin text-[#F5F5F5]">ورود</button>
+              <button class="cursor-pointer mb-8 w-full p-1.5 bg-[#3D3D3D] font-nazanin text-[#F5F5F5] transition-all active:scale-90">ورود</button>
               <div class="mb-8"><img src="./src/images/header/user/separate.png" alt=""></div>
               <div class="w-full flex flex-row justify-between items-center gap-x-3.75">
-                <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] ">
+                <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] transition-all active:scale-90">
                   ورود با گوگل
                   <img src="./src/images/header/user/Google.png" alt="">
                 </button>
-                <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] ">
+                <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] transition-all active:scale-90">
                   ورود با ایمیل
                   <img src="./src/images/header/user/envelope.png" alt="">
                 </button>
@@ -51,7 +51,96 @@
             </form>
           </dialog>
           <!--user modal-->
-          <div class="cursor-pointer"><img src="./src/images/header/shopping-cart.png" alt=""></div>
+          <!--shopping modal-->
+          <div onclick="my_modal_3.showModal()" class="cursor-pointer"><img src="./src/images/header/shopping-cart.png" alt=""></div>
+          <dialog id="my_modal_3" class="modal">
+            <div class="lg:w-1/4 w-1/2 h-screen modal-box absolute left-0 top-0 rounded-none p-0 flex flex-col">
+              <div class="w-full flex flex-row justify-between items-cente bg-[#CCCCCC] pr-3.25 py-1">
+                <div class="flex flex-row justify-center items-center gap-x-1">
+                  <form method="dialog" class="flex justify-center">
+                    <button class="cursor-pointer outline-0"><img src="./src/images/header/shopping/Arrow Right.png" alt=""></button>
+                  </form>
+                  <h2 class="font-nazanin text-[#525252] text-[22px] font-bold">ادامه خرید</h2>
+                </div>
+                <form method="dialog">
+                  <button class="btn btn-[18px] btn-ghost">✕</button>
+                </form>
+              </div>
+              <div class="w-full flex-1 flex flex-col justify-between items-center py-6">
+                <div class="w-full">
+                  <div class="w-full lg:px-4 px-2">
+                    <div class="flex lg:flex-row flex-col justify-start items-center border-b-2 border-[#A3A3A3]">
+                      <a href="./product1.html">
+                        <div class="ml-4"><img class="w-24 h-32.5" src="./src/images/header/shopping/image-1.png" alt=""></div>
+                        <div class="flex-1 mb-4">
+                          <div class="lg:mt-0 mt-2 flex flex-row justify-between items-center lg:mb-10.5 mb-5">
+                            <div>
+                              <h2 class="font-nazanin text-[#525252] text-[20px] font-bold">کت بلند پشمی</h2>
+                              <h3 class="font-nazanin text-[#7A7A7A] text-[16px]">سایز M</h3>
+                            </div>
+                            <div>
+                              <img class="w-4 h-4" src="./src/images/header/shopping/Trash Alt.png" alt="">
+                            </div>
+                          </div>
+                          <div class="flex flex-row justify-between items-end gap-x-2">
+                            <div class="lg:w-18.25 w-12 h-5.5 border-[1.5px] border-[#7A7A7A] flex flex-row justify-between items-center">
+                                <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/Minus.png" alt=""></a></div>
+                                <div class="font-nazanin text-[18px] text-[#666666]">1</div>
+                                <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/add-icon.png" alt=""></a></div>
+                            </div>
+                            <div>
+                              <div class="font-nazanin font-bold text-[#8F8F8F] text-[14px] line-through">4,200,000 تومان</div>
+                              <div class="font-nazanin font-bold text-[#D71F1F] text-[16px]">3,800,000 تومان</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-full mt-6 lg:px-4 px-2">
+                    <div class="flex lg:flex-row flex-col justify-start items-center border-b-2 border-[#A3A3A3]">
+                      <a href="./product2.html">
+                        <div class="ml-4"><img class="w-24 h-32.5" src="./src/images/header/shopping/image-2.png" alt=""></div>
+                        <div class="flex-1 mb-4">
+                          <div class="lg:mt-0 mt-2 flex flex-row justify-between items-center lg:mb-10.5 mb-5">
+                            <div>
+                              <h2 class="font-nazanin text-[#525252] text-[20px] font-bold">پلیور یقه اسکی</h2>
+                              <h3 class="font-nazanin text-[#7A7A7A] text-[16px]">سایز M</h3>
+                            </div>
+                            <div>
+                              <img class="w-4 h-4" src="./src/images/header/shopping/Trash Alt.png" alt="">
+                            </div>
+                          </div>
+                          <div class="flex flex-row justify-between items-end gap-x-2">
+                            <div class="lg:w-18.25 w-12 h-5.5 border-[1.5px] border-[#7A7A7A] flex flex-row justify-between items-center">
+                                <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/Minus.png" alt=""></a></div>
+                                <div class="font-nazanin text-[18px] text-[#666666]">1</div>
+                                <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/add-icon.png" alt=""></a></div>
+                            </div>
+                            <div>
+                              <div class="font-nazanin font-bold text-[#8F8F8F] text-[14px] line-through">1,750,000 تومان</div>
+                              <div class="font-nazanin font-bold text-[#D71F1F] text-[16px]">1,200,000 تومان</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:px-4 px-2 mx-auto lg:mt-0 mt-2">
+                  <div class="lg:mb-6 mb-3 flex flex-row justify-between items-center ">
+                    <h4 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">جمع:</h4>
+                    <h4 class="font-nazanin font-bold text-[#3D3D3D] text-[18px]">4,940,000 تومان</h4>
+                  </div>
+                  <div class="w-full bg-[#666666] p-2 transition-all active:scale-90"><a href="#" class="block w-full font-nazanin text-[#F5F5F5] text-[22px] text-center ">خرید</a></div>
+                </div>
+              </div>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
+          <!--shopping modal-->
         </div>
     </div>
     <!-- header -->
