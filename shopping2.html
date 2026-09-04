@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لیلیان</title>
+  <link rel="stylesheet" href="./src/css/output.css">
+  <link rel="shortcut icon" href="./src/images/icon/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="w-full relative">
+        <!-- header -->
+        <div class="lg:max-w-450 lg:px-15 px-5 max-w-full lg:h-16.25 h-auto lg:mx-auto py-3 flex lg:flex-row flex-col gap-y-5 lg:flex-wrap justify-center lg:justify-between items-center lg:gap-y-0 sticky top-0 bg-[#FFFFFF]">
+            <div class="lg:w-fit w-full flex items-center pr-2"><a href="#"><img class="" src="./src/images/header/logo-text.png" alt=""></a></div>
+            <div class="flex lg:flex-row lg:gap-y-0 items-center gap-x-6">
+            <div class="text-[14px] font-sans text-[#3d3d3d] font-bold"><a href="./women.html">زنانه</a></div>
+            <div class="text-[14px] font-sans text-[#3d3d3d] font-bold"><a href="#">مردانه</a></div>
+            <div class="text-[14px] font-sans text-[#3d3d3d] font-bold"><a href="#">درباره‌ما</a></div>
+            <div class="text-[14px] font-sans text-[#3d3d3d] font-bold"><a href="#">تماس با‌ما</a></div>
+            </div>
+            <div class="flex flex-row flex-wrap gap-x-4 items-center justify-center lg:static absolute left-4 top-4 pl-2">
+            <div class="cursor-pointer"><img src="./src/images/header/Search.png" alt=""></div>
+            <!--user modal-->
+            <div onclick="my_modal_2.showModal()" class="cursor-pointer"><img src="./src/images/header/user-alt.png" alt=""></div>
+            <dialog id="my_modal_2" class="modal">
+                <div class="modal-box">
+                <h3 class="mb-8 text-[20px] font-bold font-nazanin text-[#525252] text-center">خوش آمدید</h3>
+                <div class="w-full border-[1.5px] border-[#B8B8B8] px-5 py-1.5 mb-4"><input type="text" placeholder="شماره همراه" class="w-full outline-0 placeholder:font-nazanin placeholder:text-[#A3A3A3] placeholder:text-[16px]"></div>
+                <div class="mb-2 relative w-full border-[1.5px] border-[#B8B8B8] px-5 py-1.5">
+                    <input id="password" type="password" placeholder="کلمه عبور" class="w-full outline-0 placeholder:font-nazanin placeholder:text-[#A3A3A3] placeholder:text-[16px]"/>
+                    <button type="button" class="absolute left-6 top-2.25 cursor-pointer" id="togglePassword"><img class="w-5 h-5" id="eyeIcon" src="./src/images/header/user/eye-slash.svg" alt="نمایش رمز عبور"></button>
+                </div>
+                <h4 class="cursor-pointer mb-6 font-nazanin text-[14px] text-[#B8B8B8] underline">کلمه عبور خود را فراموش کرده‌اید؟</h4>
+                <button class="cursor-pointer mb-8 w-full p-1.5 bg-[#3D3D3D] font-nazanin text-[#F5F5F5] transition-all active:scale-90">ورود</button>
+                <div class="mb-8"><img src="./src/images/header/user/separate.png" alt=""></div>
+                <div class="w-full flex flex-row justify-between items-center gap-x-3.75">
+                    <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] transition-all active:scale-90">
+                    ورود با گوگل
+                    <img src="./src/images/header/user/Google.png" alt="">
+                    </button>
+                    <button class="cursor-pointer w-1/2 border-[1.5px] border-[#B8B8B8] flex flex-row justify-center items-center gap-x-2 px-5 py-1 font-nazanin text-[#7A7A7A] transition-all active:scale-90">
+                    ورود با ایمیل
+                    <img src="./src/images/header/user/envelope.png" alt="">
+                    </button>
+                </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+                </form>
+            </dialog>
+            <!--user modal-->
+            <!--shopping modal-->
+            <div onclick="my_modal_3.showModal()" class="cursor-pointer"><img src="./src/images/header/shopping-cart.png" alt=""></div>
+            <dialog id="my_modal_3" class="modal">
+                <div class="lg:w-1/4 w-1/2 h-screen modal-box absolute left-0 top-0 rounded-none p-0 flex flex-col">
+                <div class="w-full flex flex-row justify-between items-cente bg-[#CCCCCC] pr-3.25 py-1">
+                    <div class="flex flex-row justify-center items-center gap-x-1">
+                    <form method="dialog" class="flex justify-center">
+                        <button class="cursor-pointer outline-0"><img src="./src/images/header/shopping/Arrow Right.png" alt=""></button>
+                    </form>
+                    <h2 class="font-nazanin text-[#525252] text-[22px] font-bold">ادامه خرید</h2>
+                    </div>
+                    <form method="dialog">
+                    <button class="btn btn-[18px] btn-ghost">✕</button>
+                    </form>
+                </div>
+                <div class="w-full flex-1 flex flex-col justify-between items-center py-6">
+                    <div class="w-full">
+                    <div class="w-full lg:px-4 px-2">
+                        <div class="flex lg:flex-row flex-col justify-start items-center border-b-2 border-[#A3A3A3]">
+                        <a href="./product1.html">
+                            <div class="ml-4"><img class="w-24 h-32.5" src="./src/images/header/shopping/image-1.png" alt=""></div>
+                            <div class="flex-1 mb-4">
+                            <div class="lg:mt-0 mt-2 flex flex-row justify-between items-center lg:mb-10.5 mb-5">
+                                <div>
+                                <h2 class="font-nazanin text-[#525252] text-[20px] font-bold">کت بلند پشمی</h2>
+                                <h3 class="font-nazanin text-[#7A7A7A] text-[16px]">سایز M</h3>
+                                </div>
+                                <div>
+                                <img class="w-4 h-4" src="./src/images/header/shopping/Trash Alt.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-between items-end gap-x-2">
+                                <div class="lg:w-18.25 w-12 h-5.5 border-[1.5px] border-[#7A7A7A] flex flex-row justify-between items-center">
+                                    <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/Minus.png" alt=""></a></div>
+                                    <div class="font-nazanin text-[18px] text-[#666666]">1</div>
+                                    <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/add-icon.png" alt=""></a></div>
+                                </div>
+                                <div>
+                                    <div class="font-nazanin font-bold text-[#8F8F8F] text-[14px] line-through">4,200,000 تومان</div>
+                                    <div class="font-nazanin font-bold text-[#D71F1F] text-[16px]">3,800,000 تومان</div>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="w-full mt-6 lg:px-4 px-2">
+                        <div class="flex lg:flex-row flex-col justify-start items-center border-b-2 border-[#A3A3A3]">
+                        <a href="./product2.html">
+                            <div class="ml-4"><img class="w-24 h-32.5" src="./src/images/header/shopping/image-2.png" alt=""></div>
+                            <div class="flex-1 mb-4">
+                            <div class="lg:mt-0 mt-2 flex flex-row justify-between items-center lg:mb-10.5 mb-5">
+                                <div>
+                                <h2 class="font-nazanin text-[#525252] text-[20px] font-bold">پلیور یقه اسکی</h2>
+                                <h3 class="font-nazanin text-[#7A7A7A] text-[16px]">سایز M</h3>
+                                </div>
+                                <div>
+                                <img class="w-4 h-4" src="./src/images/header/shopping/Trash Alt.png" alt="">
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-between items-end gap-x-2">
+                                <div class="lg:w-18.25 w-12 h-5.5 border-[1.5px] border-[#7A7A7A] flex flex-row justify-between items-center">
+                                    <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/Minus.png" alt=""></a></div>
+                                    <div class="font-nazanin text-[18px] text-[#666666]">1</div>
+                                    <div><a href="#"><img class="w-5 h-5 opacity-70" src="./src/images/product2/add-icon.png" alt=""></a></div>
+                                </div>
+                                <div>
+                                    <div class="font-nazanin font-bold text-[#8F8F8F] text-[14px] line-through">1,750,000 تومان</div>
+                                    <div class="font-nazanin font-bold text-[#D71F1F] text-[16px]">1,200,000 تومان</div>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="w-full lg:px-4 px-2 mx-auto lg:mt-0 mt-2">
+                    <div class="lg:mb-6 mb-3 flex flex-row justify-between items-center ">
+                        <h4 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">جمع:</h4>
+                        <h4 class="font-nazanin font-bold text-[#3D3D3D] text-[18px]">4,940,000 تومان</h4>
+                    </div>
+                    <div class="w-full bg-[#666666] p-2 transition-all active:scale-90"><a href="#" class="block w-full font-nazanin text-[#F5F5F5] text-[22px] text-center ">خرید</a></div>
+                    </div>
+                </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+                </form>
+            </dialog>
+            <!--shopping modal-->
+            </div>
+        </div>
+        <!-- header -->
+        <!-- shopping-step -->
+        <div class="lg:w-1/3 w-full lg:px-0 px-5 mt-20 lg:mb-16.25 mb-12 lg:max-w-450 max-w-full mx-auto flex flex-row justify-between items-center">
+            <a href="./shopping1.html" class="bg-[#666666] rounded-full w-10 h-10 font-nazanin font-bold text-[#F5F5F5]  text-[20px] flex justify-center items-center">1</a>
+            <a href="./shopping2.html" class="bg-[#3D3D3D] rounded-full w-10 h-10 font-nazanin font-bold text-[#F5F5F5] text-[20px] flex justify-center items-center">2</a>
+            <a href="./shopping3.html" class="bg-[#E0E0E0] rounded-full w-10 h-10 font-nazanin font-bold text-[#7A7A7A] text-[20px] flex justify-center items-center">3</a>
+            <a href="./shopping-done.html" class="bg-[#E0E0E0] rounded-full w-10 h-10 font-nazanin font-bold text-[#7A7A7A] text-[20px] flex justify-center items-center"><img src="./src/images/header/shopping/done.png" alt=""></a>
+        </div>
+        <!-- shopping-step -->
+        <!-- shopping-step-2 -->
+         <div class="lg:max-w-450 max-w-full mx-auto lg:px-15 px-5 flex lg:flex-row lg:justify-center lg:items-start flex-col justify-center content-start lg:gap-x-6 gap-y-8 mb-10">
+            <div class="lg:w-3/4 w-full flex flex-col  justify-start content-start gap-x-2">
+                <div class="p-6 border-2 border-[#A3A3A3] mb-6">
+                    <h2 class="mb-6 font-nazanin font-bold text-[#3D3D3D] text-[28px]">روش ارسال</h2>
+                    <label class="flex flex-row justify-start items-start gap-x-2 mb-4 cursor-pointer">
+                        <input type="radio" name="shipping" class="shipping-radio">
+                        <div class="radio-circle">
+                            <div class="radio-dot"></div>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 font-nazanin font-bold text-[#3D3D3D] text-[20px]">پست پیشتاز</h3>
+                            <p class="font-nazanin text-[#3D3D3D] text-[20px]">مدت زمان تحویل سفارش حداکثر 4 روز کاری پس از زودترین زمان ارسال سبد خرید شما</p>
+                        </div>
+                    </label>
+                    <label class="flex flex-row justify-start items-start gap-x-2 cursor-pointer">
+                        <input type="radio" name="shipping" class="shipping-radio">
+                        <div class="radio-circle">
+                            <div class="radio-dot"></div>
+                        </div>
+                        <div>
+                            <h3 class="mb-2 font-nazanin font-bold text-[#3D3D3D] text-[20px]">ارسال با پیک</h3>
+                            <p class="font-nazanin text-[#3D3D3D] text-[20px]">مدت زمان ارسال کمتر از 8 ساعت در شهرهای تهران و کرج</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="p-6 border-2 border-[#A3A3A3] mb-6">
+                    <h2 class="mb-6 font-nazanin font-bold text-[#3D3D3D] text-[28px]">آدرس ارسال</h2>
+                    <div class="flex flex-row flex-wrap justify-start items-center gap-x-6 gap-y-4 mb-4">
+                        <div class="flex flex-row justify-center items-center gap-x-2">
+                            <h3 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">استان:</h3>
+                            <h4 class="font-nazanin text-[#3D3D3D] text-[20px]">تهران</h4>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-x-2">
+                            <h3 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">شهر:</h3>
+                            <h4 class="font-nazanin text-[#3D3D3D] text-[20px]">تهران</h4>
+                        </div>
+                        <div class="flex flex-row justify-center items-start gap-x-2">
+                            <h3 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">آدرس پستی:</h3>
+                            <h4 class="font-nazanin text-[#3D3D3D] text-[20px]">سعادت آباد، بالاتر از ميدان كاج، خيابان دوم (شهيد عبقری)، بلوار بهزاد شمالی، نبش باغستان</h4>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-x-2">
+                            <h3 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">کد پستی:</h3>
+                            <h4 class="font-nazanin text-[#3D3D3D] text-[20px]">6675443</h4>
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-x-2">
+                            <h3 class="font-nazanin font-bold text-[#3D3D3D] text-[20px]">تلفن همراه:</h3>
+                            <h4 class="font-nazanin text-[#3D3D3D] text-[20px]">22942019</h4>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-start items-center gap-x-2">
+                        <div class="bg-[#3D3D3D] border-2 border-[#3D3D3D] active:scale-90 transition-all px-5 py-2"><a class="whitespace-nowrap font-nazanin font-bold text-[#F5F5F5] text-[18px] flex justify-center items-center" href="#">افزودن آدرس جدید</a></div>
+                        <div class="bg-[#ffffff] border-2 border-[#3D3D3D] active:scale-90 transition-all px-5 py-2"><a class="whitespace-nowrap font-nazanin font-bold text-[#3D3D3D] text-[18px] flex justify-center items-center" href="#">ویرایش اطلاعات</a></div>
+                    </div>
+                </div>
+                <div class="p-6 border-2 border-[#A3A3A3]">
+                    <h2 class="mb-4 font-nazanin font-bold text-[#3D3D3D] text-[28px]">توضیحات</h2>
+                    <input type="text" class="w-full mb-20.5 outline-0 placeholder:font-nazanin placeholder:text-[#7A7A7A] placeholder:text-[20px]" placeholder="اگر توضیحی برای دریافت سفارش دارید اینجا بنویسید...">
+                </div>
+            </div>
+            <div class="lg:w-1/4 w-full flex flex-col justify-center bg-[#ffffff] border-2 border-[#A3A3A3] py-6 px-4">
+                <div class="mb-10">
+                    <h2 class="font-nazanin font-bold text-[#3D3D3D] text-[24px] text-center">سبد خرید</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-y-6 mb-8">
+                    <h3 class="text-right font-nazanin text-[#666666] text-[18px] font-bold">قیمت کالاها (2)</h3>
+                    <h3 class="text-left font-nazanin text-[#666666] text-[18px] font-bold">5,000,000 تومان</h3>
+                    <h3 class="text-right font-nazanin text-[#666666] text-[18px] font-bold">قیمت پست</h3>
+                    <h3 class="text-left font-nazanin text-[#666666] text-[18px] font-bold">رایگان</h3>
+                    <h3 class="text-right font-nazanin text-[#3D3D3D] text-[20px] font-bold">جمع سبد خرید</h3>
+                    <h3 class="text-left font-nazanin text-[#3D3D3D] text-[20px] font-bold">5,000,000 تومان</h3>
+                    <h3 class="text-right font-nazanin text-[#D71F1F] text-[22px] font-bold">سود شما از خرید</h3>
+                    <h3 class="text-left font-nazanin text-[#D71F1F] text-[22px] font-bold">950,000 تومان</h3>
+                </div>
+                <div class="bg-[#D71F1F] w-full py-1 active:scale-90 transition-all mb-4">
+                    <a class="block font-nazanin text-center text-[#f5f5f5f5] text-[24px] font-bold" href="./shopping3.html">ثبت سفارش</a>
+                </div>
+                <div class="bg-[#A3A3A3] w-full h-[1.5px] mb-5"></div>
+                <div class="flex flex-row justify-center items-center gap-x-1">
+                    <h3 class="font-nazanin text-center text-[#3D3D3D] text-[20px] font-bold">ارسال رایگان</h3>
+                    <p class="font-nazanin text-center text-[#666666] text-[18px] font-bold">برای خریدهای بالای 2 میلیون تومان</p>
+                </div>
+            </div>
+         </div>
+         <div class="lg:max-w-450 max-w-full mx-auto lg:px-15 px-5 mb-20">
+            <div class="flex flex-row justify-between items-center">
+                <div class="bg-[#ffffff] border-2 border-[#3D3D3D] active:scale-90 transition-all lg:px-8 px-2 py-2 flex flex-row justify-between items-center gap-x-2">
+                    <div><img src="./src/images/header/shopping/Arrow Right.png" alt=""></div>
+                    <a class="whitespace-nowrap font-nazanin font-bold text-[#3D3D3D] text-[18px] flex justify-center items-center" href="./shopping1.html">بازگشت به سبد خرید</a>
+                </div>
+                <div class="bg-[#3D3D3D] border-2 border-[#3D3D3D] active:scale-90 transition-all lg:px-8 px-2 py-2 flex flex-row justify-between items-center gap-x-2  ">
+                    <a class="whitespace-nowrap font-nazanin font-bold text-[#F5F5F5] text-[18px] flex justify-center items-center" href="./shopping3.html">ثبت و ادامه خرید</a>
+                    <div><img src="./src/images/header/shopping/Arrow Left.png" alt=""></div>
+                </div>
+            </div>
+         </div>
+        <!-- shopping-step-2 -->
+        <!-- suggestion -->
+        <div class="max-w-450 mx-auto lg:px-14 px-3 mb-20">
+        <div>
+            <h1 class="font-sans font-bold text-[22px] text-[#3D3D3D] mb-10">براساس سلیقه شما</h1>
+        </div>
+        <div class="flex lg:flex-row flex-col gap-y-5 flex-wrap justify-between items-center ">
+            <a href="#" class="block">
+            <div class="mb-4"><img class="object-cover" src="./src/images/product1/suggestion/image-1.png" alt=""></div>
+            <div class="mb-4"><h1 class="font-sans text-[18px] font-bold text-black">کاپشن بدون کلاه</h1></div>
+            <div class="flex flex-row justify-between items-center">
+                <div class="font-nazanin font-bold text-[#D71F1F] text-[20px]">2,850,000 تومان</div>
+                <div class="font-nazanin font-bold text-[#8F8F8F] text-[20px] text-height-center">3,300,000 تومان</div>
+            </div>
+            </a>
+            <a href="#" class="block">
+            <div class="mb-4"><img class="object-cover" src="./src/images/product1/suggestion/image-2.png" alt=""></div>
+            <div class="mb-4"><h1 class="font-sans text-[18px] font-bold text-black">کت بلند پاییزی</h1></div>
+            <div class="flex flex-row justify-between items-center">
+                <div class="font-nazanin font-bold text-[#D71F1F] text-[20px]">4,500,000 تومان</div>
+                <div class="font-nazanin font-bold text-[#8F8F8F] text-[20px] text-height-center">4,850,000 تومان</div>
+            </div>
+            </a>
+            <a href="#" class="block">
+            <div class="mb-4"><img class="object-cover" src="./src/images/product1/suggestion/image-3.png" alt=""></div>
+            <div class="mb-4"><h1 class="font-sans text-[18px] font-bold text-black">پافر بلند زمستانی</h1></div>
+            <div class="flex flex-row justify-between items-center">
+                <div class="font-nazanin font-bold text-[#D71F1F] text-[20px]">6,700,000 تومان</div>
+                <div class="font-nazanin font-bold text-[#8F8F8F] text-[20px] text-height-center">8,100,000 تومان</div>
+            </div>
+            </a>
+            <a href="./product1.html" class="block">
+            <div class="mb-4"><img class="object-cover" src="./src/images/product1/suggestion/image-4.png" alt=""></div>
+            <div class="mb-4"><h1 class="font-sans text-[18px] font-bold text-black">پافر زمستانی</h1></div>
+            <div class="flex flex-row justify-between items-center">
+                <div class="font-nazanin font-bold text-[#D71F1F] text-[20px]">5,450,000 تومان</div>
+                <div class="font-nazanin font-bold text-[#8F8F8F] text-[20px] text-height-center">5,900,000 تومان</div>
+            </div>
+            </a>
+        </div>
+        </div>
+        <!-- end suggestion -->
+         <!-- footer -->
+        <div class="lg:max-w-450 w-full mx-auto bg-[#3D3D3D] lg:px-19.5 px-5 lg:py-20 py-5">
+        <div class="flex lg:flex-row flex-col justify-center items-start gap-x-20 gap-y-5">
+            <div class="lg:mt-0 mt-5 ml-20">
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#F5F5F5] text-[16px] font-bold mb-4">اولین کسی باش که از تخفیف‌ها باخبر میشه</a></div>
+            <div class="h-8 mb-4">
+                <input class="w-full h-full border-[1px] border-[#E0E0E0] bg-[#7A7A7A] placeholder:pr-3 placeholder:text-[#E0E0E0] placeholder:font-sans placeholder:text-[12px]" type="email" placeholder="ایمیل">
+            </div>
+            <div class="h-8 mb-4">
+                <input class="w-full h-full border-[1px] border-[#E0E0E0] bg-[#7A7A7A] placeholder:pr-3 placeholder:text-[#E0E0E0] placeholder:font-sans placeholder:text-[12px]" type="text" placeholder="نام شما">
+            </div>
+            <div class="h-8">
+                <input class="w-full h-full border-[1px] border-[#F5F5F5] placeholder:text-center placeholder:text-[#F5F5F5] placeholder:font-sans placeholder:text-[12px]" type="text" placeholder="اشتراک">
+            </div>
+            </div>
+            <div class="lg:mt-0 mt-5 ml-8">
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#F5F5F5] text-[16px] font-bold mb-4">درباره لیلیان</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">اتاق خبر لیلیان</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">همکاری با ما</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">تماس با ما</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">درباره ما</a></div>
+            </div>
+            <div class="lg:mt-0 mt-5 ml-8">
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#F5F5F5] text-[16px] font-bold mb-4">خدمات مشتریان</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">پاسخ به سوالات متداول</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">شرایط استفاده</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">حریم خصوصی</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">گزارش باگ</a></div>
+            </div>
+            <div class="lg:mt-0 mt-5 ml-8">
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#F5F5F5] text-[16px] font-bold mb-4">راهنمای خرید از لیلیان</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">خرید قسطی</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">نحوه ثبت سفارش</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">رویه ارسال سفارش</a></div>
+            <div><a href="#" class="block whitespace-nowrap font-sans text-[#CCCCCC] text-[12px] mb-4">شیوه‌های پرداخت</a></div>
+            </div>
+            <div class="lg:mt-0 mt-5">
+            <div class="mb-4"><a href="#"><img class="object-cover" src="./src/images/footer/logo-text.png" alt=""></a></div>
+            <div class="flex flex-row justify-start gap-x-2 items-center">
+                <div><a href="#"><img src="./src/images/footer/pinterest p.png" alt=""></a></div>
+                <div><a href="#"><img src="./src/images/footer/Linkedin In.png" alt=""></a></div>
+                <div><a href="#"><img src="./src/images/footer/Twitter.png" alt=""></a></div>
+                <div><a href="#"><img src="./src/images/footer/Instagram.png" alt=""></a></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- wrapper -->
+   <script src="./src/swiper/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiperWomen', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // از 768 پیکسل به بالا
+          340: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          // از 1024 پیکسل به بالا
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiperMan', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // از 768 پیکسل به بالا
+          340: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          // از 1024 پیکسل به بالا
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script>
+      const password = document.getElementById("password");
+      const togglePassword = document.getElementById("togglePassword");
+      const eyeIcon = document.getElementById("eyeIcon");
+
+      togglePassword.addEventListener("click", () => {
+
+        if (password.type === "password") {
+
+          password.type = "text";
+          eyeIcon.src = "./src/images/header/user/eye.svg";
+          eyeIcon.alt = "مخفی کردن رمز عبور";
+
+        } else {
+
+          password.type = "password";
+          eyeIcon.src = "./src/images/header/user/eye-slash.svg";
+          eyeIcon.alt = "نمایش رمز عبور";
+
+        }
+
+      });
+    </script>
+</body>
+</html>

@@ -50,3 +50,27 @@
 .man{
     direction: ltr;
 }
+.shipping-radio {
+    display: none;
+}
+
+.radio-circle {
+    width: 24px;
+    height: 24px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.radio-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+}
+.shipping-radio:checked + .radio-circle .radio-dot {
+    background-color: #3D3D3D;
+}
