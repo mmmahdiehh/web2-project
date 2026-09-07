@@ -12,6 +12,9 @@
   --font-sans: Sans;
   --font-nazanin: Nazanin;
 }
+*{
+  user-select: none;
+}
 .text-height-center {
   position: relative;
   &:after {
@@ -55,9 +58,10 @@
 }
 
 .radio-circle {
-    width: 24px;
-    height: 24px;
-    background-color: #CCCCCC;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -66,8 +70,9 @@
 }
 
 .radio-dot {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E0E0E0;
     background-color: #CCCCCC;
     border-radius: 50%;
 }
